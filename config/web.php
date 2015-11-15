@@ -16,7 +16,9 @@ $config = [
         ],
         'user' => [
             'identityClass' => 'app\models\User',
-            'enableAutoLogin' => true,
+            //'enableAutoLogin' => true,
+            'enableSession' => true,
+            'authTimeout' => 60*30, 
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -27,6 +29,17 @@ $config = [
             // 'useFileTransport' to false and configure a transport
             // for the mailer to send real emails.
             'useFileTransport' => true,
+			/*
+			'viewPath' => '@app/mail',
+			'transport'=>[
+				'class'=>'Swift_SmtpTransport',
+				'host'=>'smtp.gmail.com',
+				'username'=>'youremail@gmail.com',
+				'password'=>'your password',
+				'port'=>'587',
+				'encryption'=>'tls',
+			],
+			*/
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

@@ -1,10 +1,10 @@
-Yii 2 Basic Project Template
+Yii 2 Single Project Template
 ============================
 
-Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
+Yii 2 Single Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
 rapidly creating small projects.
 
-The template contains the basic features including user login/logout and a contact page.
+The template is basic with advanced application template features.
 It includes all commonly used configurations that would allow you to focus on adding new
 features to your application.
 
@@ -55,7 +55,7 @@ Set cookie validation key in `config/web.php` file to some random secret string:
 You can then access the application through the following URL:
 
 ~~~
-http://localhost/basic/web/
+http://localhost/single/web/
 ~~~
 
 
@@ -68,14 +68,14 @@ You can then install this project template using the following command:
 
 ~~~
 php composer.phar global require "fxp/composer-asset-plugin:~1.1.0"
-php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
+php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-single single
 ~~~
 
-Now you should be able to access the application through the following URL, assuming `basic` is the directory
+Now you should be able to access the application through the following URL, assuming `single` is the directory
 directly under the Web root.
 
 ~~~
-http://localhost/basic/web/
+http://localhost/single/web/
 ~~~
 
 
@@ -89,7 +89,7 @@ Edit the file `config/db.php` with real data, for example:
 ```php
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
+    'dsn' => 'mysql:host=localhost;dbname=yii2single',
     'username' => 'root',
     'password' => '1234',
     'charset' => 'utf8',
