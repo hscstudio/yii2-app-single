@@ -69,7 +69,7 @@ You can then install this project template using the following command:
 
 ~~~
 php composer.phar global require "fxp/composer-asset-plugin:~1.1.0"
-php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-single single
+php composer.phar create-project --prefer-dist --stability=dev hscstudio/yii2-app-single single
 ~~~
 
 
