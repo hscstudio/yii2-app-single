@@ -20,6 +20,7 @@ DIRECTORY STRUCTURE
       config/             contains application configurations
       controllers/        contains Web controller classes
       mail/               contains view files for e-mails
+	  migrations/         contains database migrations
       models/             contains model classes
       runtime/            contains files generated during runtime
       tests/              contains various tests for the basic application
@@ -71,20 +72,13 @@ php composer.phar global require "fxp/composer-asset-plugin:~1.1.0"
 php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-single single
 ~~~
 
-Now you should be able to access the application through the following URL, assuming `single` is the directory
-directly under the Web root.
-
-~~~
-http://localhost/single/web/
-~~~
-
 
 CONFIGURATION
 -------------
 
 ### Database
 
-Edit the file `config/db.php` with real data, for example:
+Create a new database and adjust the components['db'] configuration the file `config/db.php` with real data, for example:
 
 ```php
 return [
@@ -96,7 +90,17 @@ return [
 ];
 ```
 
+Apply migrations with console command 
+
+``` yii migrate ```
+
+Now you should be able to access the application through the following URL, assuming `single` is the directory
+directly under the Web root.
+
+~~~
+http://localhost/single/web/
+~~~
+
 **NOTES:**
-- Yii won't create the database for you, this has to be done manually before you can access it.
 - Check and edit the other files in the `config/` directory to customize your application as required.
 - Refer to the README in the `tests` direcotry for information specific to basic application tests.

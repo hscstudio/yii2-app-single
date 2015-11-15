@@ -6,11 +6,10 @@
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "issues": "https://github.com/hscstudio/yii2-app-single/issues?state=open",
         "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2"
+        "wiki": "https://github.com/hscstudio/yii2-app-single/wiki",
+        "source": "https://github.com/hscstudio/yii2-app-single"
     },
     "minimum-stability": "dev",
     "require": {
